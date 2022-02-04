@@ -10,5 +10,5 @@ monitoring.ui.container.elasticsearch.enabled: true
 
 ## X-Pack security credentials
 #
-elasticsearch.username: logelastic
-elasticsearch.password: macju
+#elasticsearch.username: logelastic
+#elasticsearch.password: macju

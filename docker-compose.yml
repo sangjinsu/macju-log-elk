@@ -14,7 +14,7 @@ services:
       - "9300:9300"
     environment:
       - "ES_JAVA_OPTS=-Xmx256m -Xms256m"
-      - "ELASTIC_PASSWORD=macju"
+      #- "ELASTIC_PASSWORD=macju"
       - node.name=es01
       - cluster.name=es-log-cluster
       - discovery.seed_hosts=es02,es03
@@ -37,7 +37,7 @@ services:
       - data02:/usr/share/elasticsearch/data:z
     environment:
       - "ES_JAVA_OPTS=-Xmx256m -Xms256m"
-      - "ELASTIC_PASSWORD=macju"
+      #- "ELASTIC_PASSWORD=macju"
       - node.name=es02
       - cluster.name=es-log-cluster
       - discovery.seed_hosts=es01,es03
@@ -60,7 +60,7 @@ services:
       - data03:/usr/share/elasticsearch/data:z
     environment:
       - "ES_JAVA_OPTS=-Xmx256m -Xms256m"
-      - "ELASTIC_PASSWORD=macju"
+      #- "ELASTIC_PASSWORD=macju"
       - node.name=es03
       - cluster.name=es-log-cluster
       - discovery.seed_hosts=es01,es02

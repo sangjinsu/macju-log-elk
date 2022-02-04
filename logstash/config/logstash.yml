@@ -8,5 +8,5 @@ xpack.monitoring.elasticsearch.hosts: [ "http://i6c107.p.ssafy.io:9200/" ]
 ## X-Pack security credentials
 #
 xpack.monitoring.enabled: true
-xpack.monitoring.elasticsearch.username: logelastic
-xpack.monitoring.elasticsearch.password: macju 
+#xpack.monitoring.elasticsearch.username: logelastic
+#xpack.monitoring.elasticsearch.password: macju 
