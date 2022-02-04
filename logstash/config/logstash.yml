@@ -5,6 +5,8 @@
 http.host: "0.0.0.0"
 xpack.monitoring.elasticsearch.hosts: [ "http://i6c107.p.ssafy.io:9200/" ]
 
+config.reload.automatic: true
+
 ## X-Pack security credentials
 #
 xpack.monitoring.enabled: true
