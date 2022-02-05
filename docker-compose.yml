@@ -13,7 +13,7 @@ services:
       - "9200:9200"
       - "9300:9300"
     environment:
-      - "ES_JAVA_OPTS=-Xmx256m -Xms256m"
+      - "ES_JAVA_OPTS=-Xms4g -Xmx4g"
       #- "ELASTIC_PASSWORD=macju"
       - node.name=es01
       - cluster.name=es-log-cluster
@@ -36,7 +36,7 @@ services:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro,z
       - data02:/usr/share/elasticsearch/data:z
     environment:
-      - "ES_JAVA_OPTS=-Xmx256m -Xms256m"
+      - "ES_JAVA_OPTS=-Xms4g -Xmx4g"
       #- "ELASTIC_PASSWORD=macju"
       - node.name=es02
       - cluster.name=es-log-cluster
@@ -59,7 +59,7 @@ services:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro,z
       - data03:/usr/share/elasticsearch/data:z
     environment:
-      - "ES_JAVA_OPTS=-Xmx256m -Xms256m"
+      - "ES_JAVA_OPTS=-Xms4g -Xmx4g"
       #- "ELASTIC_PASSWORD=macju"
       - node.name=es03
       - cluster.name=es-log-cluster
